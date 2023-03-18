@@ -13,6 +13,15 @@
 
 }
 /*=== General === */
+.container {
+    
+    width: 1152px;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin: 0 auto;
+    background-color: #7b7ea0;
+
+}
 body {
     font-family: 'Roboto',sans-serif;
     font-size: 16px;
@@ -22,6 +31,8 @@ body {
     background-color: var(--white-background);
 }
 .list {
+    padding: 0;
+    margin: 0;
     list-style: none;
 }
 .link {
@@ -61,6 +72,11 @@ body {
 }
 
   /* === Header === */
+  .header {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    background-color: var(--white-background);
+  }
 .logo {
     font-family: 'Raleway',sans-serif;
     font-weight: 800;
@@ -96,25 +112,36 @@ body {
 
 /* === Hero === */
 .hero {
+    padding: 187px 0;
+    text-align: center;
     background-color: var(--dark-brand);
 }
+
 .hero-title {
+   margin-top: 0;
+   margin-bottom: 48px;
     font-size: 56px;
-    line-height: 1.07;
-    text-align: center;
+    line-height: calc(60/56);
     letter-spacing: 0.02em;
-    color:var(--white-background); 
-    text-align: center;  
+    color:var(--white-background);  
 }
 .order-button {
+    display: inline-block;
+    min-width: 169px;
+    height: 56px;
+    padding: 16px 32px;
     font-family: 'Roboto',sans-serif;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
+    /* display: flex; */
+    align-items: center; 
     color: var(--white-background);
     background-color:var(--primary-brand);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     cursor: pointer;
+    border: 1px transparent;
     border-radius: 4px;
 }
 .order-button:hover,
@@ -122,18 +149,61 @@ body {
     background-color: var(--pressed-state);  
 }
 
+/*=== Features === */
+.features {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+.features-subtitle {
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+.features-article {
+    margin-top: 0;
+    margin-bottom:0 ;
+}
+
+/*=== Activity === */
+.activity {
+    padding-bottom: 120px;
+}
+.activity-title {
+    margin-top: 0;
+    margin-bottom: 72px;
+}
+.activity-img {
+    display: block;
+}
+
 /*=== Team === */
 .team {
+    padding-top: 120px;
+    padding-bottom: 120px;
     background-color: var(--light);
+}
+.team-title {
+    margin-top: 0;
+    margin-bottom: 72px;
+
 }
 .team-item {
     background-color: var(--white-background);
 }
+.team-name {
+    margin-top: 32px;
+    margin-bottom: 8px;
+}
 .team-position {
+    margin-top: 0;
+    margin-bottom: 0;
     font-size: 16px;
 }
 
 /* === Portfolio === */
+.portfolio {
+    padding-top: 96px;
+    padding-bottom: 120px;
+}
 .filter-btn {
     font-family: 'Roboto',sans-serif;
     font-weight: 500;
@@ -145,24 +215,35 @@ body {
     cursor: pointer;
     border: 1px solid var(--accent);
     border-radius: 4px;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .filter-btn:hover,
 .filter-btn:focus {
 color: var(--white-background);
 background-color: var(--pressed-state);
+border: 1px transparent;
+}
+.portfolio-subject {
+    margin-top: 32px;
+    margin-bottom: 8px;
 }
 .portfolio-text {
+    margin: 0;
     color: var(--text);
 }
 
 /*=== Footter ===*/
 .footer {
+    padding-top: 100px;
+    padding-bottom: 100px;
     background-color: var(--dark-brand);
 }
-.footer-logo {
+.footer-logo {   
     color: var(--light);
 }
 .footer-article {
+    margin-top: 16px;
+    margin-bottom: 0;
     color: var(--light);
 }
 
